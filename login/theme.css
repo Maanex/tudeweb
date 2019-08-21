@@ -1,0 +1,28 @@
+* {
+    color: var(--text);
+    font-family: var(--font);
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #FAFAFA;
+    overflow: hidden;
+}
+
+@media all and (max-width: 1000px) {
+
+}
+
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-track { background-color: transparent; }
+*::-webkit-scrollbar-thumb { background: #00000044; border-radius: 1px; }
+*::-webkit-scrollbar-thumb:hover { background: var(--major); }
+
+.nf {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden;
+    font-weight: 600;
+}

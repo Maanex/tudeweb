@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 707 299" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-586.42,-305.338)">
+        <path d="M606.557,531.369C524.018,383.261 702.553,288.578 1007.71,307.811C1346.92,329.191 1334.94,478.071 1222.37,559.804C1098.68,649.606 1009.18,575.136 886.402,573.809C763.624,572.483 642.741,596.296 606.557,531.369Z" style="fill:rgb(245,245,245);"/>
+    </g>
+    <g transform="matrix(0.398032,0,0,0.398032,152.285,59.4665)">
+        <text x="136.17px" y="261.776px" style="font-family:'Montserrat-Regular', 'Montserrat';font-size:90.489px;">THIS SITE IS UNDER</text>
+        <text x="136.17px" y="352.265px" style="font-family:'Montserrat-Regular', 'Montserrat';font-size:90.489px;">C<tspan x="199.875px " y="352.265px ">O</tspan>NS<tspan x="404.108px " y="352.265px ">T</tspan>RUC<tspan x="657.387px " y="352.265px ">T</tspan>ION</text>
+    </g>
+    <g transform="matrix(0.32194,0,0,0.32194,161.13,30.4863)">
+        <text x="136.17px" y="261.776px" style="font-family:'Montserrat-Black', 'Montserrat Black';font-weight:900;font-size:90.489px;">P<tspan x="202.499px " y="261.776px ">L</tspan>EASE C<tspan x="605.627px " y="261.776px ">O</tspan>ME BA<tspan x="998.712px " y="261.776px ">C</tspan>K L<tspan x="1219.14px 1288.91px " y="261.776px 261.776px ">AT</tspan>ER</text>
+    </g>
+    <g id="wrench-solid" transform="matrix(-0.207015,0,0,0.207015,124.209,146.9)">
+        <g transform="matrix(1,0,0,1,-256,-256)">
+            <clipPath id="_clip1">
+                <rect x="0" y="0" width="512" height="512"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <path d="M507.73,109.1C505.49,100.07 494.19,97.01 487.61,103.59L413.25,177.95L345.37,166.64L334.06,98.76L408.42,24.4C415.04,17.78 411.85,6.5 402.76,4.24C355.38,-7.5 303.21,5.15 266.18,42.17C226.54,81.81 215.63,139.27 232.13,189.37L18.74,402.76C-6.25,427.75 -6.25,468.27 18.74,493.26C43.73,518.25 84.25,518.25 109.24,493.26L322.45,280.05C372.57,296.76 429.92,285.73 469.82,245.83C506.89,208.76 519.52,156.51 507.73,109.1ZM64,472C50.75,472 40,461.25 40,448C40,434.74 50.75,424 64,424C77.25,424 88,434.74 88,448C88,461.25 77.25,472 64,472Z" style="fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,44 @@
+Brauchen wir Application add überhaupt? Wenn portal einfach über die selben cookies läuft, reicht das.
+
+
+
+
+--- MAIN ROUTER ---
+
+Main
+- Landing page
+- Info pages
+- Legal
+- Project pages
+- etc.
+
+Auth
+- Login
+- Register
+- Application add
+- Profile
+
+Api
+- Api
+
+
+--- portal. ---
+
+Portal
+- Tude Portal stuff
+
+Analytics
+- Tude Analytics
+
+
+--- club. ---
+
+Tude Club
+- Club profile
+- Club stuff
+
+Tude Arcade
+- Arcade page
+- Arcade game api
+- Arcade profile
+- etc

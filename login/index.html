@@ -1,0 +1,101 @@
+<html>
+<!--
+
+    Copyright (c) 2016-2019 Tude
+    All rights reserved
+
+    Made by Maanex
+
+-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tude - We play games - we make games">
+    <meta name="keywords" content="tude, tude.ga, tudeevents, turtlederp, maanex, daaren, zyxt, TUDE">
+    <meta name="theme-color" content="#4dc47b" id="metacolor" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Tude" />
+    <meta name="twitter:description" content="We play games - we make games" />
+    <meta name="twitter:site" content="@tudeteam" />
+
+    <title>Tude Login</title>
+    <base href="/">
+    
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Titillium+Web&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    
+    <link href="./style/gheader.css" rel="stylesheet">
+    <link href="./login/style.css" rel="stylesheet">
+    <link href="./login/theme.css" rel="stylesheet">
+    <link href="./login/mobile.css" rel="stylesheet">
+
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
+    
+    <link rel="icon" href="./assets/favicon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://portal.tude.ga/">
+    <meta property="og:title" content="Tude Login">
+    <meta property="og:description" content="Tude Login">
+    <meta property="og:image" content="https://cdn.discordapp.com/icons/268377578375610368/7395d3f3e0eb780d28d09d44d9483841.png">
+    <meta property="og:site_name" content="Tude">
+    <meta property="og:locale" content="de-DE">
+</head>
+
+<body>
+    <div id="app" :theme="darktheme ? 'dark' : 'light'">
+        <gheader></gheader>
+        
+        <img id="bgwave" src="assets/login/bgwave.svg"/>
+        <img id="blobbot" src="assets/login/blob_bot.svg"/>
+        <img id="blobtop" src="assets/login/blob_top.svg"/>
+        <img id="wavetopleft" src="assets/login/wave-topleft.svg"/>
+        <img id="wavebotright" src="assets/login/wave-botright.svg"/>
+
+        <div id="form" :class="page">
+            <svg id="formheader" viewBox="0 0 371 163" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                <path id="formheaderpath" d="M-15.987,79.986l0.855,0c8.279,-0.001 15,-6.722 15,-15l0,-53.238l0.132,0c0.926,-6.635 6.628,-11.747 13.516,-11.748l160.081,0c6.888,0 12.59,5.113 13.516,11.748l0.132,0l0,53.238c0,8.278 6.72,14.999 15,15l168.339,0l0,82.801l-386.571,0l0,-82.801Z" style="fill:#fff;"/>
+            </svg>
+            <button id="bleft" @click="page = 'login'">Login</button>
+            <button id="bright" @click="page = 'register'">Register</button>
+            <div id="icont">
+                <div class="inner" id="ileft" v-if="!login.tfa">
+                    <label for="login-email">E-Mail</label>
+                    <input type="email" id="login-email" v-model="login.email" placeholder="your@email.com" class="input" />
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" v-model="login.password" placeholder="* * * * * * * *" class="input" />
+                    <button @click="proceedLogin">Login</button>
+                    <a href="#">Reset Password</a>
+                </div>
+                <div class="inner tfa" id="ileft" v-if="login.tfa">
+                    <img src="assets/login/2fa.svg" />
+                    <h4>Two-factor authentication</h4>
+                    <h5>You can use a backup code or your two-factor<br>
+                        authentication mobile app</h5>
+                    <label for="login-password">2fa Code</label>
+                    <input type="number" id="login-tfa" v-model="login.tfacode" placeholder="123456" class="input" />
+                    <button @click="proceedTfa">Login</button>
+                    <a href="./login" @click.prevent="login.tfa = false">Back</a>
+                </div>
+                <div class="inner" id="iright">
+                    <label for="register-name">Username</label>
+                    <input type="text" id="register-name" v-model="register.username" placeholder="Username" class="input" />
+                    <label for="register-email">E-Mail</label>
+                    <input type="email" id="register-email" v-model="register.email" placeholder="your@email.com" class="input" />
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" v-model="register.password" placeholder="* * * * * * * *" class="input" />
+                    <button @click="proceedRegister">Register</button>
+                </div>
+            </div>
+        </div>
+        <div id="formshadow"></div>
+    </div>
+
+
+    <script src="./lib/glib.js"></script>
+    <script src="./lib/gheader.js"></script>
+    <script src="./login/controller.js"></script>
+    <script src="./login/script.js"></script>
+</body>
+</html>
