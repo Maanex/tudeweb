@@ -1,0 +1,472 @@
+<html>
+<!--
+
+    Copyright (c) 2016-2019 Tude
+    All rights reserved
+
+    Made by Maanex
+
+-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tude - We play games - we make games">
+    <meta name="keywords" content="tude, tude.ga, tudeevents, turtlederp, maanex, daaren, zyxt, TUDE">
+    <meta name="theme-color" content="#4dc47b" id="metacolor" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Tude" />
+    <meta name="twitter:description" content="We play games - we make games" />
+    <meta name="twitter:site" content="@tudeteam" />
+
+    <title>TudeBot Editor</title>
+    <base href="/">
+    
+    <script src="./js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    
+    <link href="./css/const.css" rel="stylesheet">
+    <link href="./css/global.css" rel="stylesheet">
+    <link href="./css/header.css" rel="stylesheet">
+    <link href="./tudebot/editor/style.css" rel="stylesheet">
+    <link href="./tudebot/editor/mobile.css" rel="stylesheet">
+    
+    <script src="./js/tdutil.js"></script>
+    <script src="./js/global.js"></script>
+    <script src="./js/tsb.js"></script>
+    <script src="./tudebot/editor/script.js"></script>
+
+    <link href="https://cdn.discordapp.com/attachments/391709565520969729/443385991177306112/calibril.ttf" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,700|Sniglet" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+    
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/268828578118893579/444149543513096193/Turtle_Plushie.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://tude.ga/">
+    <meta property="og:title" content="Tude">
+    <meta property="og:description" content="Tude">
+    <meta property="og:image" content="https://cdn.discordapp.com/icons/268377578375610368/7395d3f3e0eb780d28d09d44d9483841.png">
+    <meta property="og:site_name" content="Tude">
+    <meta property="og:locale" content="de-DE">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112300017-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-112300017-1');
+    </script>
+    <!-- End Of Google Analytics -->
+</head>
+
+<body>
+    <div id="app-mount">
+        <header>
+            <div class="header desktopHeader">
+                <div class="headerInner">
+                    <div class="headerLogo"><a href="#"><img src="./assets/logo_black.svg"></a></div>
+                    <ul class="headerNav">
+                        <li>
+                            <a href="./club"><span class="navLink">
+                                Club
+                                <img src="./assets/dropdown_black.svg" class="navMore">
+                            </span></a>
+                            <ul class="moreList">
+                                <li class="moreListItem"> <a class="moreListLink" href="./club">Tude Club</a> </li>
+                                <li class="moreListItem"> <a class="moreListLink" href="./arcade">Arcade</a> </li>
+                                <li class="moreListItem"> <a class="moreListLink" href="./club">Events</a> </li>
+                                <li class="moreListItem"> <a class="moreListLink" href="http://discord.tude.ga/">Discord <i class="fas fa-external-link-square-alt headerLinkExtern" title="External Link"></i></a> </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="./games"><span class="navLink">
+                                Games
+                                <img src="./assets/dropdown_black.svg" class="navMore">
+                            </span></a>
+                            <ul class="moreList">
+                                <li class="moreListItem"> <a class="moreListLink" href="./linjo">Linjo</a> </li>
+                                <li class="moreListItem"> <a class="moreListLink" href="./games">All Games</a> </li>
+                                <li class="moreListItem"> <a class="moreListLink" href="http://discord.games.tude.ga/">Discord <i class="fas fa-external-link-square-alt headerLinkExtern" title="External Link"></i></a> </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <span class="navLink">
+                                More
+                                <img src="./assets/dropdown_black.svg" class="navMore">
+                            </span>
+                            <ul class="moreList">
+                                <li class="moreListItem"> <a class="moreListLink" href="./about">About</a> </li>
+                                <li class="moreListItem"> <a class="moreListLink" href="./tudebot">Tude Bot</a> </li>
+                                <li class="moreListItem"> <a class="moreListLink" href="./blog">Blog</a> </li>
+                                <li class="moreListItem"> <a class="moreListLink" href="mailto:tudeteam@gmail.com">Contact</a> </li>
+                                <li class="moreListItem"> <a class="moreListLink" href="./more">Even More</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header mobileHeader">Oh SHIT</div>
+        </header>
+
+        <div id="cookie-info">
+            <div id="cookie-monster" title="Image source: https://twitter.com/mecookiemonster"></div>
+            <div id="cookie-text">
+                We use <a href="https://cookiesandyou.com/">cookies</a>, u fine with that?
+                <button onclick="acceptCookies()">Sure go on!</button>
+            </div>
+        </div>
+
+        <div id="background">
+        </div>
+
+        <div id="top">
+            <div id="tabl">
+                <!--Overview   Config   Commands   Help-->
+                <a href="/tudebot/editor" id="tl-overview" link="overview">Overview</a>
+                <a href="/tudebot/editor" id="tl-config" link="config" class="active">Config</a>
+                <a href="/tudebot/editor" id="tl-commands" link="commands">Commands</a>
+                <a href="/tudebot/editor" id="tl-help" link="help">Help</a>
+            </div>
+        </div>
+
+        <div id="tabs">
+            <div id="tab-overview" class="tab">
+
+            </div>
+            <div id="tab-config" class="tab">
+                <div class="category closed">
+                    <div class="ctitle">
+                        <i class="fas fa-caret-down"></i>
+                        <h2>Essentials</h2>
+                        <div class="hr"></div>
+                    </div>
+                    <div class="modules">
+                        <div class="module closed">
+                            <div class="mtitle">
+                                <div id="modlog" class="check"><img src="assets/check.svg"></div>
+                                <h3>ModLog</h3>
+                                <i class="fas fa-exclamation-triangle" title="One or more problems with this module's configuration."></i>
+                            </div>
+                            <div class="mcontent">
+                                <div class="desc alert alert-neutral">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>This module enables other modules to provide output to a specific channel. In addition to that this module also logs a few events on it's own, including member join, leave, etc. It is recommended though to only give team members access to the mod-log channel.</p>
+                                </div>
+                                <div class="prop">
+                                    <label>Channel ID</label>
+                                    <input id="modlog-channel" type="text" placeholder="536588235485478930">
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="module closed">
+                            <div class="mtitle">
+                                <div id="commands" class="check"><img src="assets/check.svg"></div>
+                                <h3>Commands</h3>
+                                <i class="fas fa-exclamation-triangle" title="One or more problems with this module's configuration."></i>
+                            </div>
+                            <div class="mcontent">
+                                <div class="desc alert alert-neutral">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>This module allows for commands to be run. You may configurate channels, prefix, black/whitelists etc.</p>
+                                </div>
+                                <div class="prop">
+                                    <div id="commands-global" class="input-list" style="margin-bottom: 0">
+                                        <label for="commands-genable" class="adapt">Enable commands in all channels</label>
+                                        <div id="commands-genable" class="check su adapt"><img src="assets/check.svg"></div>
+                                        <div class="space"></div>
+                                        <input disabled id="commands-channel" class="input-list-fill-rev" type="text" placeholder="Channel ID" value="Global">
+                                        <input id="commands-prefix" class="input-list-rect" type="text" placeholder="Prefix" title="Optional" style="margin-right: 0">
+                                        <div class="space"></div>
+                                        <select id="commands-type" class="input-list-select">
+                                            <option value="blacklist">Blacklist</option>
+                                            <option value="whitelist">Whitelist</option>
+                                        </select>
+                                        <textarea id="commands-list" class="input-list-fill-rev" type="text" placeholder="command1 command2 command3"></textarea>
+                                        <div class="space divider"></div>
+                                    </div>
+                                    <button id="commands-add" class="add-element">Add Channel Override</button>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="category closed">
+                    <div class="ctitle">
+                        <i class="fas fa-caret-down"></i>
+                        <h2>Public Servers</h2>
+                        <div class="hr"></div>
+                    </div>
+                    <div class="modules">
+                        <div class="module closed">
+                            <div class="mtitle">
+                                <div id="cleanchat" class="check"><img src="assets/check.svg"></div>
+                                <h3>Cleanchat</h3>
+                                <i class="fas fa-exclamation-triangle" title="One or more problems with this module's configuration."></i>
+                            </div>
+                            <div class="mcontent">
+                                <div class="desc alert alert-neutral">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Keeps you chat clean from spam, rude words and harassment. Automatically deletes the message, warns the user and alerts moderators if the mod-log module is active. Users with too many violations will receive a temporary mute, the duration of which increases with every further violation.</p>
+                                </div>
+                                <div class="prop">
+                                    <label for="cleanchat-role">Temp-Mute Role</label>
+                                    <input id="cleanchat-role" type="text" placeholder="536547973937496087">
+                                    <div class="space"></div>
+                                    <label for="cleanchat-modlog">Use ModLog</label>
+                                    <div id="cleanchat-modlog" class="check su"><img src="assets/check.svg"></div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="module closed">
+                            <div class="mtitle">
+                                <div id="selfroles" class="check"><img src="assets/check.svg"></div>
+                                <h3>Selfroles</h3>
+                                <i class="fas fa-exclamation-triangle" title="One or more problems with this module's configuration."></i>
+                            </div>
+                            <div class="mcontent">
+                                <div class="desc alert alert-neutral">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Every reaction added within the set channel will add (or remove) the dedicated role.</p>
+                                </div>
+                                <div class="prop">
+                                    <label for="selfroles-channel">Channel ID</label>
+                                    <input id="selfroles-channel" type="text" placeholder="536588235485478930">
+                                    <div class="space"></div>
+                                    <label for=selfroles-divider>Divider Role</label>
+                                    <input id="selfroles-divider" type="text" placeholder="[Optional] 536588235485478930">
+                                    <div class="space divider"></div>
+                                    <button id="selfroles-add" class="add-element">Add Role</button>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="module closed">
+                            <div class="mtitle">
+                                <div id="dynvoice" class="check"><img src="assets/check.svg"></div>
+                                <h3>Dynamic Voices Channels</h3>
+                                <i class="fas fa-exclamation-triangle" title="One or more problems with this module's configuration."></i>
+                            </div>
+                            <div class="mcontent">
+                                <div class="desc alert alert-neutral">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Always deletes all empty voice channels in the given category but one and gives the first person to join this channel permissions to edit it. After one joins, a new, empty channel will be created.</p>
+                                </div>
+                                <div class="prop">
+                                    <label for="dynvoice-category">Category ID</label>
+                                    <input id="dynvoice-category" type="text" placeholder="543149754394083329">
+                                    <div class="space"></div>
+                                    <label for="dynvoice-name">Channel Name</label>
+                                    <input id="dynvoice-name" type="text" placeholder="+ New Channel +">
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                
+                <div class="category closed">
+                    <div class="ctitle">
+                        <i class="fas fa-caret-down"></i>
+                        <h2>Other</h2>
+                        <div class="hr"></div>
+                    </div>
+                    <div class="modules">
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle"></i>
+                            <p>These modules were designed for a set environment. That being said it's still 100% possible to use those though they will most likely not fit in your server.</p>        
+                        </div>
+                        <div class="module closed">
+                            <div class="mtitle">
+                                <div id="memes" class="check"><img src="assets/check.svg"></div>
+                                <h3>Memes</h3>
+                                <i class="fas fa-exclamation-triangle" title="One or more problems with this module's configuration."></i>
+                            </div>
+                            <div class="mcontent">
+                                <div class="desc alert alert-neutral">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Adds up- and downvote reactions to any images (memes) in the specified memes channel and adds them to a currently private meme database.</p>
+                                </div>
+                                <div class="prop">
+                                    <label for="memes-channel">Channel ID</label>
+                                    <input id="memes-channel" type="text" placeholder="536588235485478930">
+                                    <div class="space"></div>
+                                    <label for="memes-dbOptOut">Database Opt-Out</label>
+                                    <div id="memes-dbOptOut" class="check su"><img src="assets/check.svg"></div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="module closed">
+                            <div class="mtitle">
+                                <div id="quotes" class="check"><img src="assets/check.svg"></div>
+                                <h3>Quotes</h3>
+                                <i class="fas fa-exclamation-triangle" title="One or more problems with this module's configuration."></i>
+                            </div>
+                            <div class="mcontent">
+                                <div class="desc alert alert-neutral">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>It's not as cool as it sounds. It allows users to quote other people in a set channel to preserve them for posterity.</p>
+                                </div>
+                                <div class="prop">
+                                    <label for="quotes-channel">Channel ID</label>
+                                    <input id="quotes-channel" type="text" placeholder="536588235485478930">
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="module closed">
+                            <div class="mtitle">
+                                <div id="casual" class="check"><img src="assets/check.svg"></div>
+                                <h3>Casual</h3>
+                                <i class="fas fa-exclamation-triangle" title="One or more problems with this module's configuration."></i>
+                            </div>
+                            <div class="mcontent">
+                                <div class="desc alert alert-neutral">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Adding this module is not recommended for public servers, especially not for serious ones. This module gives the bot it's own personality (and mind [in some way])<br>And yes, it has no properties to set.</p>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="module closed">
+                            <div class="mtitle">
+                                <div id="counting" class="check"><img src="assets/check.svg"></div>
+                                <h3>Counting</h3>
+                                <i class="fas fa-exclamation-triangle" title="One or more problems with this module's configuration."></i>
+                            </div>
+                            <div class="mcontent">
+                                <div class="desc alert alert-neutral">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>This module moderates a set channel in order to only let users count upwards. Only one text a time and nothing else than texts. Usefulness is questionable.</p>
+                                </div>
+                                <div class="prop">
+                                    <label for="counting-channel">Channel ID</label>
+                                    <input id="counting-channel" type="text" placeholder="536588235485478930">
+                                    <div class="space"></div>
+                                    <label for="counting-emotes">Emotes</label>
+                                    <textarea id="counting-emotes" type="text" placeholder="angry rage point_up thinking"></textarea>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                
+                <div class="category closed">
+                    <div class="ctitle">
+                        <i class="fas fa-caret-down"></i>
+                        <h2>Tude Club / Private</h2>
+                        <div class="hr"></div>
+                    </div>
+                    <div class="modules">
+                        <div class="alert alert-danger">
+                            <i class="fas fa-exclamation-triangle"></i> These modules were designed for private use only. It is unfortunately not possible to use those on your server. If you wish to do so anyways, please contact the bot team. Thank you.
+                        </div>
+                        <div class="module closed">
+                            <div class="mtitle">
+                                <div id="levelup" class="check"><img src="assets/check.svg"></div>
+                                <h3>Levelup</h3>
+                                <i class="fas fa-exclamation-triangle" title="One or more problems with this module's configuration."></i>
+                            </div>
+                            <div class="mcontent">
+                                <div class="desc alert alert-neutral">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Description missing.</p>
+                                </div>
+                                <div class="prop">
+                                    <label>Channel ID</label>
+                                    <input id="levelup-channel" type="text" placeholder="536588235485478930">
+                                    <div class="space"></div>
+                                    <label>Excluded Channels</label>
+                                    <textarea id="levelup-excluded" type="text" placeholder="487263535064154113 536588235485478930"></textarea>
+                                    <div class="space divider"></div>
+                                    <button id="levelup-add" class="add-element">Add Role Reward</button>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="module closed">
+                            <div class="mtitle">
+                                <div id="totm" class="check"><img src="assets/check.svg"></div>
+                                <h3>Turtle of the month</h3>
+                                <i class="fas fa-exclamation-triangle" title="One or more problems with this module's configuration."></i>
+                            </div>
+                            <div class="mcontent">
+                                <div class="desc alert alert-neutral">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Description missing.</p>
+                                </div>
+                                <div class="prop">
+                                    <label for="totm-channel">Channel ID</label>
+                                    <input id="totm-channel" type="text" placeholder="536588235485478930">
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="module closed">
+                            <div class="mtitle">
+                                <div id="autoleaderboard" class="check"><img src="assets/check.svg"></div>
+                                <h3>Auto-Leaderboard</h3>
+                                <i class="fas fa-exclamation-triangle" title="One or more problems with this module's configuration."></i>
+                            </div>
+                            <div class="mcontent">
+                                <div class="desc alert alert-neutral">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Description missing.</p>
+                                </div>
+                                <div class="prop">
+                                    <label for="autoleaderboard-channel">Channel ID</label>
+                                    <input id="autoleaderboard-channel" type="text" placeholder="536588235485478930">
+                                    <div class="space"></div>
+                                    <label for="autoleaderboard-modlog">Use ModLog</label>
+                                    <div id="autoleaderboard-modlog" class="check su"><img src="assets/check.svg"></div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="module closed">
+                            <div class="mtitle">
+                                <div id="birthday" class="check"><img src="assets/check.svg"></div>
+                                <h3>Cakeday surprise</h3>
+                                <i class="fas fa-exclamation-triangle" title="One or more problems with this module's configuration."></i>
+                            </div>
+                            <div class="mcontent">
+                                <div class="desc alert alert-neutral">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Description missing.</p>
+                                </div>
+                                <div class="prop">
+                                    <label for="birthday-channel">Channel ID</label>
+                                    <input id="birthday-channel" type="text" placeholder="536588235485478930">
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="category buttons">
+                    <button title="Export current configuration" class="text" onclick="btnExport()">Export</button>
+                    <button title="Reset current configuration"><i class="fas fa-undo" onclick="btnReset()"></i></button>
+                    <button title="Import existing configuration"><i class="fas fa-file-import" onclick="popup('import')"></i></button>
+                </div>
+            </div>
+            <div id="tab-commands" class="tab">
+
+            </div>
+            <div id="tab-help" class="tab">
+
+            </div>
+        </div>
+
+        <div id="curtain" onclick="popup()"></div>
+        <div id="popup-export" class="popup">
+            <textarea readonly id="export-field" class="dialog-field"></textarea>
+            <button class="text" onclick="popup()">Close</button>
+            <button title="Copy to clipboard" class="ctc"><i class="fas fa-copy"></i></button>
+            <button title="Beautify" onclick="btnExport(false, true);"><i class="fas fa-bolt"></i></button>
+        </div>
+        <div id="popup-import" class="popup">
+            <textarea id="import-field" class="dialog-field"></textarea>
+            <button id="btn-import" class="text">Import</button>
+            <button title="Cancel" onclick="popup()"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+</body>
+</html>
