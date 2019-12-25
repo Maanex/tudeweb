@@ -22,10 +22,6 @@ button > * {
     pointer-events: none;
 }
 
-#app > * {
-    user-select: none;
-}
-
 /* */
 
 * {
@@ -67,10 +63,8 @@ h1 {
     font-weight: 400;
     font-size: 40px;
     line-height: 50px;
-    padding: 100px 0 20px 0;
+    padding: 100px 5px 20px 0;
     display: block;
-    width: 90%;
-    max-width: 1300px;
 }
 
 #content {

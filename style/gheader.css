@@ -5,8 +5,8 @@ header, header * {
     --text-hover: #000000;
     --morelist: #ffffff;
     --morelist-text: #111111;
-    --morelist-br: 18px;
-    --morelist-item-br: 99px;
+    --morelist-br: 7px;
+    --morelist-item-br: 5px;
     --morelist-font: 'Montserrat', 'Roboto', sans-serif;
 }
 header[theme="light"], header[theme="light"] * {
@@ -69,9 +69,9 @@ header[hide] {
     height: 100%;
     justify-content: center;
     margin: 0 auto;
-    width: 90%;
-    max-width: 1300px; /* TODO */
-    padding: 0 15px;
+    /*width: 90%;*/
+    /*max-width: 1300px; /* TODO */
+    padding: 5 20px;
     position: relative;
 }
 
@@ -155,7 +155,7 @@ header[hide] {
     box-shadow: 0 2px 50px #00000014;
     font-size: 13px;
     left: 0;
-    min-width: 122px;
+    min-width: 130px;
     overflow: hidden;
     padding: 2px 0;
     position: absolute;
@@ -191,6 +191,7 @@ li:hover > .moreList,
     font-size: 15px;
     font-weight: 400;
     text-decoration: none !important;
+    cursor: pointer;
 }
 
 .headerLinkExtern {

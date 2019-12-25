@@ -23,7 +23,7 @@
     <base href="/">
     <link rel="icon" href="./assets/favicon.png">
     
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
     
     <link href="./style/gheader.css" rel="stylesheet">
@@ -43,10 +43,22 @@
 </head>
 
 <body>
-    <div id="app">
-        <gheader :theme="darktheme ? 'dark' : 'light'"></gheader>
+    <div id="app" :contentstate="contentstate">
+        <gheader></gheader>
 
-        <img src="./assets/under_construction.svg" style="position:absolute;top:50vh;left:50vw;width:30vw;transform:translate(-50%,-50%);" draggable="false">
+        <div id="text">
+            <h1 v-html="content.title.split('\n').join('<br>')"></h1>
+            <h2 v-text="content.desc"></h2>
+            <a :href="content.link" :style="`--color: ${content.color}; --color-hover: ${contentcolorhover}`">More</a>
+            <img id="backtext_splatter" src="./assets/index/backtext_splatter.svg" draggable="false">
+        </div>
+
+        <div id="pagesel">
+            <div id="pageselel" v-for="a of contentamount" :active="a-1==contentpage" :onclick="`changeContent(${a-1})`"></div>
+        </div>
+
+        <img id="splashart" :src="`./assets/index/${content.img}`" draggable="false">
+        <img id="bottom_wave" src="./assets/index/bottom_wave.svg" draggable="false">
     </div>
 
     <script src="./lib/glib.js"></script>

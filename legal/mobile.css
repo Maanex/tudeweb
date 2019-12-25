@@ -1,0 +1,20 @@
+
+@media (max-width: 848px) {
+    
+h1 {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 50px;
+    padding: 50px 5px 20px 0;
+    display: block;
+}
+
+#titlebox {
+    height: 130px;
+}
+
+#content {
+    padding: 130px 200px 0 0;
+}
+
+}
