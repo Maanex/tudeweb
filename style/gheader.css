@@ -16,8 +16,8 @@ header[theme="light"], header[theme="light"] * {
     --text-hover: #fafafa;
     --morelist: #FAFAFA;
     --morelist-text: #111111;
-    --morelist-br: 18px;
-    --morelist-item-br: 99px;
+    --morelist-br: 7px;
+    --morelist-item-br: 5px;
     --morelist-font: 'Montserrat', 'Roboto', sans-serif;
 }
 
