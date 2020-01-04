@@ -1,0 +1,36 @@
+
+@media (max-width: 848px) {
+    
+    #text {
+        top: 30vh;
+        right: 10vw;
+        width: 80vw;
+        align-items: center;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-family: 'Montserrat', 'Roboto', sans-serif;
+        font-weight: 800;
+        font-size: 16vh;
+        text-align: center;
+        line-height: 5vh;
+    }
+
+    h2 {
+        text-transform: lowercase;
+        font-family: 'Montserrat', 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: 4vh;
+        text-align: center;
+        margin-top: 5vh;
+    }
+
+    #text > a {
+        margin-top: 7vh;
+        font-size: 3vh;
+        padding: 2vh 0;
+        width: 22vh;
+    }
+    
+}
