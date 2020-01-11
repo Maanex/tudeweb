@@ -42,7 +42,7 @@ app = new Vue({
 let switchTimer = null;
 function changeContent(page = -1) {
   if (switchTimer) clearTimeout(switchTimer);
-  switchTimer = setTimeout(changeContent, 10_000);
+  switchTimer = setTimeout(changeContent, 10000);
 
   if (page == app.contentpage) return;
 
