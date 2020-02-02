@@ -30,7 +30,8 @@ app = new Vue({
     contentstate: '',
     contentpage: 0,
     contentamount: content.length,
-    content: content[0]
+    content: content[0],
+    allcontent: content
   },
   computed: {
     contentcolorhover: function() {

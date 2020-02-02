@@ -1,0 +1,274 @@
+:root {
+    --background: #1F2023;
+    --bright: #37393e;
+    --dark: #181A1C;
+
+    --darkest: #0c0d0e;
+
+    --text: #ffffff;
+    --sub: #CCCCCC;
+
+    --theme-a: #73988A;
+    --theme-b: #C5DCD4;
+
+    --error: #f16248;
+
+    --font: 'Montserrat', 'Roboto', sans-serif;
+    --font-weight-normal: 500;
+    --font-weight-bold: 800;
+}
+
+button > * {
+    pointer-events: none;
+}
+
+html, body { overflow: hidden; }
+html, body, #app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#app {
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+
+#content {
+    position: relative;
+    width: 90%;
+    max-width: 1300px;
+}
+
+#infobox {
+    position: absolute;
+    top: 25vh;
+    left: 0;
+    z-index: 20;
+}
+
+h1 {
+    color: var(--text);
+    font-family: var(--font);
+    font-weight: var(--font-weight-bold);
+    font-size: 50px;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--sub);
+    font-family: var(--font);
+    font-weight: var(--font-weight-normal);
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 60px;
+}
+
+#buttons {
+    position: relative;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 44px;
+    margin: 0 10px 0 0;
+    background-color: #7B7FE1;
+    background-image: url('/assets/freestuff/button-img.png');
+    background-position: 0 50%;
+    background-size: cover;
+    font-family: var(--font);
+    font-weight: var(--font-weight-normal);
+    font-size: 24px;
+    user-select: none;
+    color: var(--text);
+    border-radius: .5vh;
+    box-shadow: 0 0 15px #00000088;
+    transition: .2s ease all;
+}
+.button:hover {
+    opacity: .7;
+    background-position: -5px 50%;
+    transform: translateY(-1px);
+    box-shadow: 0 1px 15px #00000088;
+}
+
+.button.min {
+    background: transparent;
+    border: 2px solid var(--sub);
+    color: var(--sub);
+    padding: 10px 42px;
+    opacity: .8;
+    box-shadow: none;
+}
+.button.min:hover {
+    opacity: .8;
+    background: #ffffff11;
+}
+
+#gameslist {
+    position: absolute;
+    top: 20vh;
+    right: 0;
+    z-index: 10;
+}
+
+#pricetagcont,
+#gameslist > img {
+    position: absolute;
+    width: 320px;
+    border-radius: 1vh;
+    user-select: none;
+}
+
+#imggame1 {
+    right: 100px;
+    box-shadow: 0 0 15px #00000088;
+}
+
+#imggame2 {
+    right: 30px;
+    transform: scale(.9);
+    box-shadow: 0 0 10px #00000066;
+}
+
+#imggame3 {
+    right: -10px;
+    transform: scale(.8);
+    opacity: .5;
+    box-shadow: 0 0 5px #00000044;
+}
+
+#imgdiscord {
+    width: 400px !important;
+    top: 210px;
+    right: 260px;
+    box-shadow: 0 0 15px #00000088;
+}
+
+#discordimgdetail {
+    position: absolute;
+    width: 400px !important;
+    top: 600px;
+    right: 260px;
+    text-align: center;
+    font-size: 14px;
+    opacity: .3;
+}
+
+#imgdecoblob {
+    width: 380px !important;
+    top: 200px;
+    right: 65px;
+}
+
+#pricetagcont {
+    right: 100px;
+    z-index: 100;
+}
+#pricetag {
+    display: inline-flex;
+    border-radius: .5vh;
+    background: #00000088;
+    backdrop-filter: blur(5px);
+    margin: 15px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: var(--font);
+}
+
+#pricetag > .price {
+    color: var(--text);
+}
+
+#pricetag > .free {
+    margin-left: 10px;
+    color: #FFC200;
+    font-weight: var(--font-weight-bold);
+}
+
+#pricetag > .strike {
+    background: #FFC200;
+    display: inline-block;
+    height: 3px;
+    width: 64px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-1.5px) rotate(-10deg);
+}
+
+.deco {
+    position: fixed;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+}
+
+#decoblob2 {
+    top: 0;
+    left: 0;
+    width: 440px;
+}
+
+#decoline1 {
+    bottom: 0;
+    left: 0;
+    width: 440px;
+}
+
+#decoline2 {
+    top: 50%;
+    right: 0;
+    width: 115px;
+    transform: translateY(-50%);
+}
+
+.decoitem {
+    width: 40px;
+}
+
+#decoitem1 {
+    bottom: 10%;
+    left: 5%;
+}
+
+#decoitem2 {
+    right: 15%;
+    bottom: 25%;
+}
+
+#decoitem3 {
+    top: 10%;
+    left: 45%;
+}
+
+#decoitem4 {
+    bottom: 4%;
+    left: 12%;
+}
+
+#decoitem5 {
+    top: 17%;
+    right: 7%;
+}
+
+#decoarrow1 {
+    position: absolute;
+    width: 80px;
+    left: -110px;
+    top: 12px;
+}
+
+#decoarrow2 {
+    position: absolute;
+    width: 60px;
+    left: 130px;
+    top: 65px;
+}

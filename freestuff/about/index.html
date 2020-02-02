@@ -1,0 +1,114 @@
+<html>
+<!--
+
+    Copyright (c) 2016-2019 Tude
+    All rights reserved
+
+    Made by Maanex
+
+-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Never miss out on any free games!">
+    <meta name="keywords" content="free, games, free games, freegames, tude, tude.ga, maanex">
+    <meta name="theme-color" content="#4dc47b" id="metacolor" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Free Stuff Bot" />
+    <meta name="twitter:description" content="Never miss out on any free games!" />
+    <meta name="twitter:site" content="@tudeteam" />
+
+    <title>Free Stuff - Tude</title>
+    <base href="/">
+    <link rel="icon" href="./assets/freestuff/favicon.png">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,500,800+Web&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    
+    <link href="./style/gheader.css" rel="stylesheet">
+    <link href="./style/gtheme.css" rel="stylesheet">
+    <link href="./freestuff/about/style.css" rel="stylesheet">
+    <link href="./freestuff/about/mobile.css" rel="stylesheet">
+
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tude.ga/">
+    <meta property="og:title" content="Tude">
+    <meta property="og:description" content="Tude">
+    <meta property="og:image" content="./assets/favicon.png">
+    <meta property="og:site_name" content="Tude">
+    <meta property="og:locale" content="de-DE">
+</head>
+
+<body>
+    <div id="app">
+        <gheader theme="light"></gheader>
+        
+        <div id="content">
+            <div id="infobox">
+                <h1>Free Stuff <div class="bottag">BOT</div></h1>
+                <h2>An easy way to get informed about <br>all the free games out there!</h2>
+                <div class="divider"></div>
+                <div class="box">
+                    <h3 style="color: #00f0a5" id="quick-setup">Quick Setup</h3>
+                    <h4>Step one:</h4>
+                    <span>Tell the bot in which channel it should send the annoucements using:</span>
+                    <code>@FreeStuff set channel #channel</code>
+                    <span>with #channel being a channel of your choice, of course.</span>
+                    <h4>Step two:</h4>
+                    <span>Try it out! You can at any time try if everything works correctly by using this command:</span>
+                    <code>@FreeStuff test</code>
+                    <span>If you get a message in the channel you've set up in step one, congratulations, your job here is done! You will from now on get news about new free games in that channel!</span>
+                    <br>
+                    <span>Scroll down a bit to see how you can customize the bot's message.</span>
+                    <div class="info">Ever feel lost? Type <code inline>@FreeStuff help</code> for help!</div>
+                </div>
+                <div class="box">
+                    <h3 style="color: #ffaa25" id="customisation">Customisation</h3>
+                    <h4>Mention a role</h4>
+                    <span>The bot can mention a role whenever there's free stuff! Works nice with so-called self-roles other bots provide. If you want the bot to mention @everyone, check if it has the permissions to do so!</span>
+                    <code>@FreeStuff set mention @rolename</code>
+                    <h4>Apply themes</h4>
+                    <span>You can apply a theme that changes the look of the bot's messages:</span>
+                    <code>@FreeStuff set theme 1</code>
+                    <span>The 1 in this case stands for the theme 1. A full list of all available themes can be found <a href="./freestuff/themes">here</a></span>
+                    <h4>Change the currency</h4>
+                    <span>With some themes the bot also shows the original price. You can choose to show this price either in euros or us-dollars using:</span>
+                    <code>@FreeStuff set currency €</code>
+                    <span>You can also write euro / dollar if you don't have access to these symbols.</span>
+                    <h4>Enable auto-reaction</h4>
+                    <span>The bot can automatically react with the :free: emoji to each of it's messages. You can toggle this using:</span>
+                    <code>@FreeStuff set reaction on/off</code>
+                </div>
+                <div class="box">
+                    <h3 style="color: var(--sub)" id="more">More</h3>
+                    <h4>Bot made by</h4>
+                    <span><a href="https://maanex.tk/">Maanex</a>, <a href="https://twitter.com/Maanex_">@Maanex_</a> on Twitter</span>
+                    <h4>Technical Details</h4>
+                    <span>The bot is written in TypeScript using Discord.js and a MongoDB database</span>
+                    <h4>Where do you get the information from?</h4>
+                    <span>We have our spies everywhere 😉</span>
+                    <span>If you do wanna send something in that we haven't found yet, feel free to contact us over on <a href="https://discord.gg/mJnQXet">our discord server</a></span>
+                </div>
+                <footer>Copyright &copy; 2020 Tude</footer>
+            </div>
+        </div>
+
+        <img class="deco" id="decoblob2" src="/assets/freestuff/deco-blob-2.svg" draggable="false">
+        <img class="deco" id="decoline1" src="/assets/freestuff/deco-line-1.svg" draggable="false">
+        <img class="deco" id="decoline2" src="/assets/freestuff/deco-line-2.svg" draggable="false">
+        <img class="deco decoitem" id="decoitem1" src="/assets/freestuff/deco-item-1.svg" draggable="false">
+        <img class="deco decoitem" id="decoitem2" src="/assets/freestuff/deco-item-2.svg" draggable="false">
+        <img class="deco decoitem" id="decoitem3" src="/assets/freestuff/deco-item-3.svg" draggable="false">
+        <img class="deco decoitem" id="decoitem4" src="/assets/freestuff/deco-item-4.svg" draggable="false">
+        <img class="deco decoitem" id="decoitem5" src="/assets/freestuff/deco-item-5.svg" draggable="false">
+    </div>
+
+    <script src="./lib/glib.js"></script>
+    <script src="./lib/gheader.js"></script>
+    <script src="./freestuff/about/controller.js"></script>
+    <script src="./freestuff/about/script.js"></script>
+</body>
+</html>

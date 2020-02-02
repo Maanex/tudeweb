@@ -1,0 +1,43 @@
+@media (max-width: 1200px) {
+  
+
+  h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  h2 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+
+  #buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #gameslist {
+    top: 100vh;
+    transform: scale(.7);
+  }
+
+  #imgdiscord {
+    right: 10vw;
+    width: 80vw;
+    top: 300px;
+    margin-bottom: 50px;
+  }
+
+  #decoline1,
+  #decoline2,
+  #decoblob2 {
+    display: none;
+  }
+
+
+}
