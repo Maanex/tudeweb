@@ -1,43 +1,106 @@
 @media (max-width: 1200px) {
+
+
+	#infobox {
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 30px;
+		line-height: 30px;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 16px;
+		line-height: 16px;
+		text-align: center;
+	}
+
+	#decoarrow1 {
+		position: absolute;
+		width: 80px;
+		left: 50%;
+		top: 12px;
+		transform: translateX(-250px);
+	}
+
+	#decoarrow2 {
+		position: absolute;
+		width: 60px;
+		left: 42%;
+		top: 65px;
+	}
+
+	.button {
+		font-size: 20px;
+	}
+
+	#buttons {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	#gameslist {
+		top: 80vh;
+		transform: scale(0.7);
+		width: 100%;
+		right: 50%;
+		transform: translateX(50%);
+  }
   
-
-  h1 {
-    font-size: 30px;
-    line-height: 30px;
+  #pricetagcont {
+		right: unset;
+    left: 2vw;
   }
 
-  h2 {
-    font-size: 16px;
-    line-height: 16px;
-  }
+	#imggame1 {
+		right: unset;
+    left: 2vw;
+    width: 70vw !important;
+	}
 
-  .button {
-    font-size: 20px;
-  }
+	#imggame2 {
+    right: 8% !important;
+    width: 70vw !important;
+	}
 
-  #buttons {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
+	#imggame3 {
+    right: 0 !important;
+    width: 70vw !important;
+	}
 
-  #gameslist {
-    top: 100vh;
-    transform: scale(.7);
-  }
+	#imgdiscord {
+    right: 0 !important;
+    margin: auto;
+		width: 90vw !important;
+		top: 300px;
+		margin-bottom: 75px;
+	}
 
-  #imgdiscord {
-    right: 10vw;
-    width: 80vw;
-    top: 300px;
-    margin-bottom: 50px;
-  }
+	#discordimgdetail {
+		position: absolute;
+		width: 100% !important;
+		top: 620px;
+		right: 0 !important;
+		text-align: center;
+		font-size: 14px;
+		opacity: 0.3;
+	}
 
-  #decoline1,
-  #decoline2,
-  #decoblob2 {
-    display: none;
-  }
+	#decoline1,
+	#decoline2,
+	#decoblob2 {
+		display: none;
+	}
+	
+	.deco {
+		opacity: .2;
+	}
 
-
+	#buttons > .deco {
+		opacity: 1;
+	}
+  
 }

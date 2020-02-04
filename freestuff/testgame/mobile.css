@@ -38,6 +38,10 @@
   #decoblob2 {
     display: none;
   }
+	
+	.deco {
+		opacity: .2;
+	}
 
 
 }

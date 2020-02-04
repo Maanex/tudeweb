@@ -39,5 +39,51 @@
     display: none;
   }
 
+  #mid {
+    flex-direction: column;
+  }
+
+  #imgbox {
+    width: 100% !important;
+    min-height: 330px;
+    margin-bottom: 30px !important;
+    margin-top: 30px !important;
+  }
+  
+  #buttonsbox {
+    width: 100% !important;
+  }
+
+  #buttons {
+    width: calc(100% + 5px);
+    display: flex;
+    justify-content: left;
+    transform: translate(0px, 0px);
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  button {
+    padding: 10px 0;
+    margin: 5px;
+    width: calc(((100% - 15px) / 4) - 7px) !important;
+    color: var(--theme);
+    font-family: var(--font);
+    font-weight: var(--font-weight-bold);
+    font-size: 36px;
+  }
+
+  footer {
+    display: none;
+  }
+
+  #tutorial {
+    margin-bottom: 30px;
+  }
+	
+	.deco {
+		opacity: .2;
+	}
+
 
 }
