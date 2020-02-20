@@ -3,7 +3,7 @@ var app;
 app = new Vue({
   el: '#app',
   data: {
-    currImg: '/assets/freestuff/discord-example.png',
+    currImg: '/assets/freestuff/theme-1.png',
     themeId: 1,
     availableThemes: [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
     themeImages: [
