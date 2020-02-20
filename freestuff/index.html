@@ -51,10 +51,10 @@
                 <h1>The internet is full<br>of free games</h1>
                 <h2>And with this Discord bot<br>you'll never miss any of them!</h2>
                 <div id="buttons">
-                    <a href="https://discordapp.com/oauth2/authorize?redirect_uri=https%3A%2F%2Ftude.ga%2Ffreestuff%2Fcallback&client_id=672822334641537041&permissions=265280&scope=bot&response_type=code" class="button">Invite</a>
-                    <a href="./freestuff/about" class="button min">About</a>
-                    <img class="deco" id="decoarrow1" src="/assets/freestuff/deco-arrow-1.svg" draggable="false">
-                    <img class="deco" id="decoarrow2" src="/assets/freestuff/deco-arrow-2.svg" draggable="false">
+                    <a id="invite-button" href="https://discordapp.com/oauth2/authorize?redirect_uri=https%3A%2F%2Ftude.ga%2Ffreestuff%2Fcallback&client_id=672822334641537041&permissions=265280&scope=bot&response_type=code" class="button">Invite</a>
+                    <a id="about-button" href="./freestuff/about" class="button min">About</a id="about-button">
+                    <img class="deco arrow" id="decoarrow1" src="/assets/freestuff/deco-arrow-1.svg" draggable="false" depth="80">
+                    <img class="deco arrow" id="decoarrow2" src="/assets/freestuff/deco-arrow-2.svg" draggable="false" depth="90">
                 </div>
             </div>
             <div id="gameslist">
@@ -77,11 +77,11 @@
         <img class="deco" id="decoblob2" src="/assets/freestuff/deco-blob-2.svg" draggable="false">
         <img class="deco" id="decoline1" src="/assets/freestuff/deco-line-1.svg" draggable="false">
         <img class="deco" id="decoline2" src="/assets/freestuff/deco-line-2.svg" draggable="false">
-        <img class="deco decoitem" id="decoitem1" src="/assets/freestuff/deco-item-1.svg" draggable="false">
-        <img class="deco decoitem" id="decoitem2" src="/assets/freestuff/deco-item-2.svg" draggable="false">
-        <img class="deco decoitem" id="decoitem3" src="/assets/freestuff/deco-item-3.svg" draggable="false">
-        <img class="deco decoitem" id="decoitem4" src="/assets/freestuff/deco-item-4.svg" draggable="false">
-        <img class="deco decoitem" id="decoitem5" src="/assets/freestuff/deco-item-5.svg" draggable="false">
+        <img class="deco decoitem" id="decoitem1" src="/assets/freestuff/deco-item-1.svg" draggable="false" depth="95" onclick="init3D()" style="pointer-events: unset; cursor: pointer;">
+        <img class="deco decoitem" id="decoitem2" src="/assets/freestuff/deco-item-2.svg" draggable="false" depth="120">
+        <img class="deco decoitem" id="decoitem3" src="/assets/freestuff/deco-item-3.svg" draggable="false" depth="92">
+        <img class="deco decoitem" id="decoitem4" src="/assets/freestuff/deco-item-4.svg" draggable="false" depth="106">
+        <img class="deco decoitem" id="decoitem5" src="/assets/freestuff/deco-item-5.svg" draggable="false" depth="100">
     </div>
 
     <script src="./lib/glib.js"></script>

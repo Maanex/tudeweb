@@ -1,6 +1,10 @@
 @media (max-width: 1200px) {
 
 
+	* {
+		transform: unset !important;
+	}
+
 	#infobox {
 		width: 100%;
 	}

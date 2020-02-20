@@ -18,6 +18,10 @@
     --font-weight-bold: 800;
 }
 
+* {
+    transform: var(--trans);
+}
+
 button > * {
     pointer-events: none;
 }
@@ -90,12 +94,11 @@ h2 {
     color: var(--text);
     border-radius: .5vh;
     box-shadow: 0 0 15px #00000088;
-    transition: .2s ease all;
+    transition: .2s ease opacity, .2s ease background-position, .2s ease box-shadow;
 }
 .button:hover {
     opacity: .7;
     background-position: -5px 50%;
-    transform: translateY(-1px);
     box-shadow: 0 1px 15px #00000088;
 }
 
@@ -126,6 +129,7 @@ h2 {
     border-radius: 1vh;
     user-select: none;
 }
+#pricetagcont { transform: var(--transf); }
 
 #imggame1 {
     right: 100px;
@@ -134,13 +138,13 @@ h2 {
 
 #imggame2 {
     right: 30px;
-    transform: scale(.9);
+    transform: var(--trans, scale(.9));
     box-shadow: 0 0 10px #00000066;
 }
 
 #imggame3 {
     right: -10px;
-    transform: scale(.8);
+    transform: var(--trans, scale(.8));
     opacity: .5;
     box-shadow: 0 0 5px #00000044;
 }
@@ -215,12 +219,14 @@ h2 {
     top: 0;
     left: 0;
     width: 440px;
+    transform: none;
 }
 
 #decoline1 {
     bottom: 0;
     left: 0;
     width: 440px;
+    transform: none;
 }
 
 #decoline2 {

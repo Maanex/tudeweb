@@ -8,10 +8,10 @@ let content = [
     color: '#6289D9'
   },
   {
-    title: 'tude\nevents',
-    desc: 'season 2',
-    link: 'https://events.tude.ga/',
-    img: 'splashart_tudeevents.svg',
+    title: 'free\nstuff',
+    desc: 'discord bot',
+    link: './freestuff',
+    img: 'splashart_freestuff.svg',
     color: '#E59C30'
   },
   {
@@ -20,7 +20,14 @@ let content = [
     link: '/about',
     img: 'splashart_aboutus.svg',
     color: '#6A8D80'
-  }
+  },
+  {
+    title: 'tude\nevents',
+    desc: 'season 2',
+    link: 'https://events.tude.ga/',
+    img: 'splashart_tudeevents.svg',
+    color: '#E59C30'
+  },
 ]
 
 let app;
