@@ -28,7 +28,7 @@
     
     <link href="./style/gheader.css" rel="stylesheet">
     <link href="./style/gtheme.css" rel="stylesheet">
-    <link href="./legal/style.css" rel="stylesheet">
+    <link href="./legal/style.min.css" rel="stylesheet">
     <link href="./legal/mobile.css" rel="stylesheet">
 
     <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
@@ -44,20 +44,23 @@
 
 <body>
     <div id="app">
-        <gheader></gheader>
+        <gheader monochrome="true"></gheader>
 
         <div id="titlebox">
             <h1>Legal Information</h1>
         </div>
 
-        <div id="content">
+        <div id="content" class="as-list">
             <h2>Tude</h2>
-            <a href="./legal/terms">&bull; Terms of Service</a>
-            <a href="./legal/privacy">&bull; Privacy Policy</a>
-            <a href="./legal/imprint">&bull; Imprint</a>
+            <a href="./legal/terms">Terms of Service</a>
+            <a href="./legal/privacy">Privacy Policy</a>
+            <a href="./legal/imprint">Imprint</a>
             
             <h2>Games</h2>
-            <a href="./legal/privacy/linjo">&bull; Linjo Privacy Policy</a>
+            <a href="./legal/privacy/linjo">Linjo Privacy Policy</a>
+            
+            <h2>Services</h2>
+            <a href="./legal/terms/tudeapi">Tude API Terms of Service</a>
         </div>
 
     </div>

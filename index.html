@@ -26,8 +26,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800Web&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
     
-    <link href="./style/gheader.css" rel="stylesheet">
-    <link href="./style/gtheme.css" rel="stylesheet">
+    <link href="./style/gheader.min.css" rel="stylesheet">
+    <link href="./style/gtheme.min.css" rel="stylesheet">
     <link href="./index/style.css" rel="stylesheet">
     <link href="./index/mobile.css" rel="stylesheet">
 
@@ -53,7 +53,7 @@
         <div id="text" :class="content.class">
             <h1 v-html="content.title.split('\n').join('<br>')"></h1>
             <h2 v-html="content.desc.split('\n').join('<br>')"></h2>
-            <a :href="content.link" :style="`--color: ${content.color}; --color-hover: ${contentcolorhover}`">More</a>
+            <a button :href="content.link" :style="`--color: ${content.color}; --color-hover: ${contentcolorhover}`">More</a>
             <img id="backtext_splatter" src="./assets/index/backtext_splatter.svg" draggable="false">
         </div>
 

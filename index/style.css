@@ -1,22 +1,3 @@
-:root {
-    --background: #FAFAFA;
-    --area-a: #FFFFFF;
-    --area-b: #EEEEEE;
-    --bright: #36393f;
-    --dark: #181A1C;
-    --darkest: #0c0d0e;
-
-    --text: #202020;
-    --sub: #9D9D9D;
-
-    --theme-a: #73988A;
-    --theme-b: #C5DCD4;
-
-    --error: #f16248;
-
-    --font: 'Quicksand', 'Titillium Web', 'Roboto', sans-serif;
-    --titles: 'Titillium Web', 'Quicksand', 'Roboto', sans-serif;
-}
 
 button > * {
     pointer-events: none;
@@ -89,23 +70,9 @@ h2 {
 }
 
 #text > a {
-    padding: 1vh 0;
-    width: 16vh;
-    text-transform: capitalize;
-    font-family: 'Montserrat', 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 2.5vh;
-    text-align: center;
     margin: 4vh 0 0 0;
-    border-radius: .5vh;
-    background: var(--color);
-    color: var(--background);
-    cursor: pointer;
-    transition: .2s all ease-out;
-}
-
-#text > a:hover {
-    box-shadow: inset 16vh 0 0 0 var(--color-hover);
+    width: 16vh;
+    padding: 1vh 0;
 }
 
 #backtext_splatter {
